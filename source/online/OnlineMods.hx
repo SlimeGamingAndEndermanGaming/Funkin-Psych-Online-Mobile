@@ -119,7 +119,7 @@ class OnlineMods {
 		var modName:String = null;
 		var ignoreRest = false;
 		var isExecutable = false;
-		var isRar = unrar.RARUtil.isRAR(fileName);
+		var isRar = #if RAR_SUPPORTED unrar.RARUtil.isRAR(fileName) #else false #end;
 		var zipFiles:List<Entry> = null;
 
 		function iterFunc(fileName:String) {

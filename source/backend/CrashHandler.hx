@@ -1,4 +1,4 @@
-package mobile.backend;
+package backend;
 
 import openfl.events.UncaughtErrorEvent;
 import openfl.events.ErrorEvent;
@@ -9,7 +9,7 @@ import sys.io.File;
 #end
 
 using StringTools;
-using CoolUtil;
+using backend.CoolUtil;
 
 /**
  * Crash Handler.

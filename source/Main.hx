@@ -56,6 +56,7 @@ class Main extends Sprite
 		#if mobile
 		Sys.setCwd(#if ios lime.system.System.documentsDirectory #elseif android haxe.io.Path.addTrailingSlash(android.content.Context.getExternalFilesDir()) #end);
 		#end
+		backend.CrashHandler.init();
 
 		if (stage != null)
 		{
