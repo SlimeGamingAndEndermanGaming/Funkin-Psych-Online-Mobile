@@ -10,6 +10,17 @@ import llua.*;
 import llua.Lua;
 #end
 
+//Android
+#if android
+import android.content.Context as AndroidContext;
+import android.widget.Toast as AndroidToast;
+import android.os.Environment as AndroidEnvironment;
+import android.Permissions as AndroidPermissions;
+import android.Settings as AndroidSettings;
+import android.Tools as AndroidTools;
+import android.os.BatteryManager as AndroidBatteryManager;
+#end
+
 import backend.Paths;
 import backend.Controls;
 import backend.CoolUtil;
@@ -21,6 +32,7 @@ import backend.Conductor;
 import backend.BaseStage;
 import backend.Difficulty;
 import backend.Mods;
+import mobile.backend.SUtil;
 
 import objects.Alphabet;
 import objects.BGSprite;
